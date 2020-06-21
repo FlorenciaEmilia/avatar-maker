@@ -1,0 +1,38 @@
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.p {
+	width: 15px;
+	height: 15px;
+}
+
+.bg {
+	background-color: #cef0d5;
+}
+
+.skin {
+	background-color: burlywood;
+}
+
+.border {
+	background-color: black;
+}
+
+.sweater {
+	background-color: #a12f2f;
+}
+
+.hair {
+	background-color: #bd88f2;
+}
+
+.eye {
+	background-color: green;
+}
+
+.eyeball {
+	background-color: honeydew;
+}
