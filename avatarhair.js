@@ -225,8 +225,8 @@ const hairFunctions = {
 	}
 };
 
-// const hairTypeIBtn = document.getElementById('hairI');
-// hairTypeIBtn.addEventListener('click', hairFunctions.hairTypeI);
+const hairTypeIBtn = document.getElementById('hairI');
+hairTypeIBtn.addEventListener('click', hairFunctions.hairTypeI);
 
 const hairTypeIIBtn = document.getElementById('hairII');
 hairTypeIIBtn.addEventListener('click', hairFunctions.hairTypeII);

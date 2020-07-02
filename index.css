@@ -1,3 +1,7 @@
+:root {
+	--shirtColor: #db7093;
+}
+
 button {
 	height: 20px;
 	background-color: white;
@@ -39,7 +43,7 @@ img {
 }
 
 .shirt {
-	background-color: palevioletred;
+	background-color: var(--shirtColor);
 }
 
 div[id$='-area-test'] {
