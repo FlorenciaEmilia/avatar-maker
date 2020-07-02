@@ -10,3 +10,8 @@ let classRemoverFunc = (areaSelector) => {
 		classEraser(areaSelector[i]);
 	}
 };
+
+//Color picker formula
+function colorFunc() {
+	document.documentElement.style.setProperty(`--${this.name}`, this.value);
+}
