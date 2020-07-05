@@ -53,6 +53,15 @@ div[id$='-area-test'] {
 	text-align: center;
 	padding: 1em;
 }
+/*Test display*/
+#hair-area-test {
+	display: flex;
+}
+
+#hair-area-test div {
+	padding: 1em;
+	border-right: 1px solid green;
+}
 
 .explanation {
 	color: gray;
