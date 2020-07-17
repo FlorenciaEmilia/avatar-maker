@@ -1118,7 +1118,7 @@ const hairFunctions = {
 		}
 	},
 	hairTypeVI: () => {
-		hairStyle = 'short-curtly-hair';
+		hairStyle = 'medium-curtly-hair';
 		classRemoverFunc(hairAreaSelector);
 		for (let i = 0; i < 96; i++) {
 			areaFiller(hairAreaSelector, i, 'bg');
@@ -1432,6 +1432,351 @@ const hairFunctions = {
 		}
 		areaFiller(hairAreaSelector, 629, 'border');
 		for (let i = 630; i < 634; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+	},
+	hairTypeVII: () => {
+		hairStyle = 'long-curtly-hair';
+		classRemoverFunc(hairAreaSelector);
+		for (let i = 0; i < 96; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 96; i < 100; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 100; i < 119; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 119; i < 121; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 121; i < 123; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 123, 'border');
+
+		for (let i = 124; i < 128; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 128, 'border');
+		for (let i = 129; i < 131; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 131; i < 133; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 133; i < 146; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 146, 'border');
+
+		for (let i = 147; i < 149; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 149, 'border');
+		areaFiller(hairAreaSelector, 150, 'bg');
+		areaFiller(hairAreaSelector, 151, 'border');
+		for (let i = 152; i < 156; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 156, 'border');
+		areaFiller(hairAreaSelector, 157, 'bg');
+		areaFiller(hairAreaSelector, 158, 'border');
+		for (let i = 159; i < 161; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 161, 'border');
+		for (let i = 162; i < 173; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 173, 'border');
+		for (let i = 174; i < 177; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 177; i < 180; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 180; i < 184; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 184; i < 187; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 187; i < 190; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 190, 'border');
+		for (let i = 191; i < 201; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 201, 'border');
+		for (let i = 202; i < 218; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 218, 'border');
+		for (let i = 219; i < 230; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		//This is the surrounding area border
+		areaFiller(hairAreaSelector, 230, 'border');
+		for (let i = 231; i < 245; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 245, 'border');
+		for (let i = 246; i < 255; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 255; i < 258; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 258; i < 266; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 266; i < 269; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 269; i < 274; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 274, 'border');
+		for (let i = 275; i < 287; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 287, 'border');
+		for (let i = 288; i < 292; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 292, 'border');
+		for (let i = 293; i < 303; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 303, 'border');
+		for (let i = 304; i < 308; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 308, 'border');
+		for (let i = 309; i < 319; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 319, 'border');
+		for (let i = 320; i < 325; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 325; i < 327; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 327; i < 333; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 333; i < 335; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 335; i < 342; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 342, 'border');
+		//Maybe in this row there will be a little bug with the bang combination
+		for (let i = 343; i < 345; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 345; i < 347; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 347; i < 349; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 349, 'border');
+		for (let i = 350; i < 357; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 357; i < 359; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 359; i < 361; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 361; i < 363; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 363; i < 368; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 368, 'border');
+		for (let i = 369; i < 375; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 375, 'border');
+		for (let i = 376; i < 380; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 380, 'border');
+		for (let i = 381; i < 387; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 387, 'border');
+		for (let i = 388; i < 393; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 393, 'border');
+		for (let i = 394; i < 398; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 398, 'border');
+		for (let i = 399; i < 406; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 406, 'border');
+		for (let i = 407; i < 411; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 411, 'border');
+		for (let i = 412; i < 419; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		for (let i = 419; i < 421; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 421; i < 425; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 425; i < 427; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 427; i < 432; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 432, 'border');
+		for (let i = 433; i < 441; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 441, 'border');
+		for (let i = 442; i < 446; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 446, 'border');
+		for (let i = 447; i < 457; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 457, 'border');
+		for (let i = 458; i < 462; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 462, 'border');
+		for (let i = 463; i < 477; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 477, 'border');
+		for (let i = 478; i < 483; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 483, 'border');
+		for (let i = 484; i < 489; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 489, 'border');
+		for (let i = 490; i < 492; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 492, 'border');
+		for (let i = 493; i < 498; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 498, 'border');
+		for (let i = 499; i < 506; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 506, 'border');
+		for (let i = 507; i < 510; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 510, 'border');
+
+		for (let i = 511; i < 515; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 515, 'border');
+		for (let i = 516; i < 519; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 519, 'border');
+		//Long hair test
+		for (let i = 520; i < 527; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 527, 'border');
+		for (let i = 528; i < 533; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 533; i < 537; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 537; i < 542; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 542, 'border');
+		for (let i = 543; i < 548; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 548, 'border');
+		for (let i = 549; i < 556; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 556; i < 558; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 558; i < 565; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 565, 'border');
+		for (let i = 566; i < 570; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 570, 'border');
+		for (let i = 571; i < 578; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 578; i < 580; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 580; i < 587; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 587, 'border');
+		for (let i = 588; i < 592; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 592, 'border');
+		for (let i = 593; i < 600; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 600; i < 602; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 602; i < 609; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 609, 'border');
+		for (let i = 610; i < 615; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 615, 'border');
+		for (let i = 616; i < 620; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 620; i < 622; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 622; i < 624; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		for (let i = 624; i < 626; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 626; i < 630; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 630, 'border');
+		for (let i = 631; i < 634; i++) {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
 	}
@@ -1762,6 +2107,9 @@ hairTypeVBtn.addEventListener('click', hairFunctions.hairTypeV);
 
 const hairTypeVIBtn = document.getElementById('hairVI');
 hairTypeVIBtn.addEventListener('click', hairFunctions.hairTypeVI);
+
+const hairTypeVIIBtn = document.getElementById('hairVII');
+hairTypeVIIBtn.addEventListener('click', hairFunctions.hairTypeVII);
 
 // Hair Color Section
 const hairButton = document.getElementById('hair-color');
