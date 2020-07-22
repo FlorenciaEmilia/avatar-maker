@@ -48,7 +48,7 @@ img {
 }
 
 div[id$='-area-test'] {
-	width: 30vw;
+	width: 50vw;
 	border: 2px solid palevioletred;
 	text-align: center;
 	padding: 1em;
