@@ -3668,6 +3668,94 @@ const hairFunctions = {
 	hairTypeXVI: () => {
 		hairStyle = 'medium-curly-hair3';
 		hairFunctionsBasePattern.hairTypeXV();
+		for (let i = 478; i < 483; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 483, 'border');
+
+		for (let i = 484; i < 498; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 498, 'border');
+		for (let i = 499; i < 504; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 504, 'border');
+		for (let i = 505; i < 521; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 521, 'border');
+		for (let i = 522; i < 526; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 526, 'border');
+		for (let i = 527; i < 543; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 543, 'border');
+		for (let i = 544; i < 549; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 549, 'border');
+		for (let i = 550; i < 556; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 556; i < 558; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 558; i < 564; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 564, 'border');
+		for (let i = 565; i < 570; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 570, 'border');
+		for (let i = 571; i < 578; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		for (let i = 578; i < 580; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 580; i < 587; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 587, 'border');
+		for (let i = 588; i < 593; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 593, 'border');
+		for (let i = 594; i < 599; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 599, 'border');
+		for (let i = 600; i < 602; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 602, 'border');
+		for (let i = 603; i < 608; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 608, 'border');
+		for (let i = 609; i < 616; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 616, 'border');
+		for (let i = 617; i < 620; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 620, 'border');
+		for (let i = 621; i < 625; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 625, 'border');
+		for (let i = 626; i < 629; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 629, 'border');
+		for (let i = 630; i < 634; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
 	}
 };
 
