@@ -12,6 +12,56 @@ let areaFiller = (fillArea, idNumber, cssClassName) => {
 
 //testing to not have so many repeated code
 const hairFunctionsBasePattern = {
+	avatarBottom: () => {
+		for (let i = 529; i < 541; i++) {
+			areaFiller(hairAreaSelector, i, 'border');
+		}
+		for (let i = 541; i < 551; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 551, 'border');
+		for (let i = 552; i < 562; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 562, 'border');
+		for (let i = 563; i < 572; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 572, 'border');
+		for (let i = 573; i < 585; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 585, 'border');
+		for (let i = 586; i < 594; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 594, 'border');
+		for (let i = 595; i < 607; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+
+		areaFiller(hairAreaSelector, 607, 'border');
+
+		for (let i = 608; i < 616; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 616, 'border');
+		for (let i = 617; i < 619; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 619, 'border');
+		for (let i = 620; i < 626; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 626, 'border');
+		for (let i = 627; i < 629; i++) {
+			areaFiller(hairAreaSelector, i, 'shirt');
+		}
+		areaFiller(hairAreaSelector, 629, 'border');
+		for (let i = 630; i < 634; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+	},
 	hairTypeXIV: () => {
 		let shortCurlyHair = () => {
 			for (let i = 0; i < 35; i++) {
@@ -211,15 +261,15 @@ const hairFunctionsBasePattern = {
 				areaFiller(hairAreaSelector, i, 'hair');
 			}
 			areaFiller(hairAreaSelector, 440, 'border');
-			for (let i = 441; i < 447; i++) {
+			for (let i = 441; i < 446; i++) {
 				areaFiller(hairAreaSelector, i, 'bg');
 			}
-			areaFiller(hairAreaSelector, 447, 'border');
-			for (let i = 448; i < 456; i++) {
+			areaFiller(hairAreaSelector, 446, 'border');
+			for (let i = 447; i < 457; i++) {
 				areaFiller(hairAreaSelector, i, 'hair');
 			}
-			areaFiller(hairAreaSelector, 456, 'border');
-			for (let i = 457; i < 462; i++) {
+			areaFiller(hairAreaSelector, 457, 'border');
+			for (let i = 458; i < 462; i++) {
 				areaFiller(hairAreaSelector, i, 'bg');
 			}
 			areaFiller(hairAreaSelector, 462, 'border');
@@ -227,14 +277,6 @@ const hairFunctionsBasePattern = {
 				areaFiller(hairAreaSelector, i, 'hair');
 			}
 			areaFiller(hairAreaSelector, 477, 'border');
-			for (let i = 478; i < 483; i++) {
-				areaFiller(hairAreaSelector, i, 'bg');
-			}
-			areaFiller(hairAreaSelector, 483, 'border');
-			for (let i = 484; i < 498; i++) {
-				areaFiller(hairAreaSelector, i, 'hair');
-			}
-			areaFiller(hairAreaSelector, 498, 'border');
 		};
 		mediumCurlyHair();
 	}
@@ -3600,6 +3642,14 @@ const hairFunctions = {
 	hairTypeXV: () => {
 		hairStyle = 'medium-curly-hair3';
 		hairFunctionsBasePattern.hairTypeXV();
+		for (let i = 478; i < 483; i++) {
+			areaFiller(hairAreaSelector, i, 'bg');
+		}
+		areaFiller(hairAreaSelector, 483, 'border');
+		for (let i = 484; i < 498; i++) {
+			areaFiller(hairAreaSelector, i, 'hair');
+		}
+		areaFiller(hairAreaSelector, 498, 'border');
 		for (let i = 499; i < 506; i++) {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
@@ -3613,54 +3663,11 @@ const hairFunctions = {
 		for (let i = 520; i < 529; i++) {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
-		for (let i = 529; i < 541; i++) {
-			areaFiller(hairAreaSelector, i, 'border');
-		}
-		for (let i = 541; i < 551; i++) {
-			areaFiller(hairAreaSelector, i, 'bg');
-		}
-		areaFiller(hairAreaSelector, 551, 'border');
-		for (let i = 552; i < 562; i++) {
-			areaFiller(hairAreaSelector, i, 'shirt');
-		}
-		areaFiller(hairAreaSelector, 562, 'border');
-		for (let i = 563; i < 572; i++) {
-			areaFiller(hairAreaSelector, i, 'bg');
-		}
-		areaFiller(hairAreaSelector, 572, 'border');
-		for (let i = 573; i < 585; i++) {
-			areaFiller(hairAreaSelector, i, 'shirt');
-		}
-		areaFiller(hairAreaSelector, 585, 'border');
-		for (let i = 586; i < 594; i++) {
-			areaFiller(hairAreaSelector, i, 'bg');
-		}
-		areaFiller(hairAreaSelector, 594, 'border');
-		for (let i = 595; i < 607; i++) {
-			areaFiller(hairAreaSelector, i, 'shirt');
-		}
-
-		areaFiller(hairAreaSelector, 607, 'border');
-
-		for (let i = 608; i < 616; i++) {
-			areaFiller(hairAreaSelector, i, 'bg');
-		}
-		areaFiller(hairAreaSelector, 616, 'border');
-		for (let i = 617; i < 619; i++) {
-			areaFiller(hairAreaSelector, i, 'shirt');
-		}
-		areaFiller(hairAreaSelector, 619, 'border');
-		for (let i = 620; i < 626; i++) {
-			areaFiller(hairAreaSelector, i, 'shirt');
-		}
-		areaFiller(hairAreaSelector, 626, 'border');
-		for (let i = 627; i < 629; i++) {
-			areaFiller(hairAreaSelector, i, 'shirt');
-		}
-		areaFiller(hairAreaSelector, 629, 'border');
-		for (let i = 630; i < 634; i++) {
-			areaFiller(hairAreaSelector, i, 'bg');
-		}
+		hairFunctionsBasePattern.avatarBottom();
+	},
+	hairTypeXVI: () => {
+		hairStyle = 'medium-curly-hair3';
+		hairFunctionsBasePattern.hairTypeXV();
 	}
 };
 
@@ -4016,6 +4023,9 @@ hairTypeXIVBtn.addEventListener('click', hairFunctions.hairTypeXIV);
 
 const hairTypeXVBtn = document.getElementById('hairXV');
 hairTypeXVBtn.addEventListener('click', hairFunctions.hairTypeXV);
+
+const hairTypeXVIBtn = document.getElementById('hairXVI');
+hairTypeXVIBtn.addEventListener('click', hairFunctions.hairTypeXVI);
 
 // Hair Color Section
 const hairButton = document.getElementById('hair-color');
