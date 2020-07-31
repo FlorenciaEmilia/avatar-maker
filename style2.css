@@ -1,3 +1,4 @@
+/* styling to responsive design- 2 column layout */
 * {
   box-sizing: border-box;
 }
@@ -30,3 +31,31 @@ width: 75%;
   display: table;
   clear: both;
 }
+/* end of responsive design styling */
+
+/* new form section styling */
+
+.newForm{
+  border: solid 2px black;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.formHairColor{
+ display: flex;
+ flex-direction: column;
+}
+
+.formOutfitColor{
+  display: flex;
+  flex-direction: column;
+}
+
+/* end of new form section styling */
