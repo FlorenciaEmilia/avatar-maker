@@ -57,11 +57,16 @@ select {
   display: flex;
   flex-direction: column;
 }
-
-/* end of new form section styling */
+/* end of new form section styling
 
 /* title about avatar */
 
 .title{
   text-align: center;
+  font-family:'Press Start 2P', cursive;
 }
+
+/* font families for later reference: 
+
+font-family: 'Press Start 2P', cursive;
+font-family: 'Ubuntu', sans-serif; */
