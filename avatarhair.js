@@ -1392,7 +1392,7 @@ const hairFunctions = {
 		hairFunctionsBasePattern.avatarBottom();
 	},
 	hairTypeII: () => {},
-	hairTypeIII: () => {
+	hairType3: () => {
 		hairStyle = 'buns';
 		classRemoverFunc(hairAreaSelector);
 		for (let i = 0; i < 89; i++) {
@@ -1576,7 +1576,7 @@ const hairFunctions = {
 		// Here the shirt starts
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeIV: () => {
+	hairType4: () => {
 		hairStyle = 'bowl';
 		classRemoverFunc(hairAreaSelector);
 
@@ -1688,7 +1688,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeV: () => {
+	hairType5: () => {
 		hairFunctionsBasePattern.hairTypeV();
 		for (let i = 406; i < 412; i++) {
 			areaFiller(hairAreaSelector, i, 'border');
@@ -1699,7 +1699,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeVI: () => {
+	hairType6: () => {
 		hairFunctionsBasePattern.hairTypeVI();
 		areaFiller(hairAreaSelector, 506, 'border');
 		for (let i = 507; i < 510; i++) {
@@ -1722,7 +1722,7 @@ const hairFunctions = {
 
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeVII: () => {
+	hairType7: () => {
 		hairStyle = 'long-curtly-hair';
 		hairFunctionsBasePattern.hairTypeVI();
 		areaFiller(hairAreaSelector, 506, 'border');
@@ -1820,7 +1820,7 @@ const hairFunctions = {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
 	},
-	hairTypeVIII: () => {
+	hairType8: () => {
 		hairFunctionsBasePattern.hairTypeVIII();
 
 		for (let i = 334; i < 343; i++) {
@@ -1842,7 +1842,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeIX: () => {
+	hairType9: () => {
 		hairStyle = 'medium-curtly-hair2';
 		hairFunctionsBasePattern.hairTypeIX();
 		for (let i = 519; i < 529; i++) {
@@ -1850,7 +1850,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeX: () => {
+	hairType10: () => {
 		hairStyle = 'long-curtly-hair2';
 		hairFunctionsBasePattern.hairTypeIX();
 		for (let i = 519; i < 528; i++) {
@@ -1928,7 +1928,7 @@ const hairFunctions = {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
 	},
-	hairTypeXI: () => {
+	hairType11: () => {
 		hairStyle = 'short-puffy-hair';
 		hairFunctionsBasePattern.hairTypeXI();
 		for (let i = 320; i < 325; i++) {
@@ -1973,7 +1973,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeXII: () => {
+	hairType12: () => {
 		hairStyle = 'medium-puffy-hair';
 		hairFunctionsBasePattern.hairTypeXII();
 		for (let i = 442; i < 447; i++) {
@@ -2016,7 +2016,7 @@ const hairFunctions = {
 
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeXIII: () => {
+	hairType13: () => {
 		hairStyle = 'long-puffy-hair';
 		hairFunctionsBasePattern.hairTypeXII();
 		for (let i = 442; i < 446; i++) {
@@ -2128,7 +2128,7 @@ const hairFunctions = {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
 	},
-	hairTypeXIV: () => {
+	hairType14: () => {
 		hairStyle = 'short-curly-hair3';
 		classRemoverFunc(hairAreaSelector);
 		hairFunctionsBasePattern.hairTypeXIV();
@@ -2152,7 +2152,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeXV: () => {
+	hairType15: () => {
 		hairStyle = 'medium-curly-hair3';
 		hairFunctionsBasePattern.hairTypeXV();
 		for (let i = 478; i < 483; i++) {
@@ -2178,7 +2178,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeXVI: () => {
+	hairType16: () => {
 		hairStyle = 'long-curly-hair3';
 		hairFunctionsBasePattern.hairTypeXV();
 		for (let i = 478; i < 483; i++) {
@@ -2270,7 +2270,7 @@ const hairFunctions = {
 			areaFiller(hairAreaSelector, i, 'bg');
 		}
 	},
-	hairTypeXVII: () => {
+	hairType17: () => {
 		hairStyle = 'sixties-short-hair';
 		hairFunctionsBasePattern.hairTypeXVII();
 		//Base ends here
@@ -2390,7 +2390,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeXVIII: () => {
+	hairType18: () => {
 		hairFunctionsBasePattern.hairTypeXVIII();
 		for (let i = 399; i < 403; i++) {
 			areaFiller(hairAreaSelector, i, 'bg');
@@ -2484,7 +2484,7 @@ const hairFunctions = {
 		}
 		hairFunctionsBasePattern.avatarBottom();
 	},
-	hairTypeXIX: () => {
+	hairType19: () => {
 		hairFunctionsBasePattern.hairTypeXVIII();
 		for (let i = 399; i < 405; i++) {
 			areaFiller(hairAreaSelector, i, 'bg');
@@ -2956,56 +2956,56 @@ hairTypeIBtn.addEventListener('click', hairFunctions.hairTypeI);
 // const hairTypeIIBtn = document.getElementById('hairII');
 // hairTypeIIBtn.addEventListener('click', hairFunctions.hairTypeII);
 
-const hairTypeIIIBtn = document.getElementById('hairIII');
-hairTypeIIIBtn.addEventListener('click', hairFunctions.hairTypeIII);
+const hairTypeIIIBtn = document.getElementById('hair3');
+hairTypeIIIBtn.addEventListener('click', hairFunctions.hairType3);
 
-const hairTypeIVBtn = document.getElementById('hairIV');
-hairTypeIVBtn.addEventListener('click', hairFunctions.hairTypeIV);
+const hairTypeIVBtn = document.getElementById('hair4');
+hairTypeIVBtn.addEventListener('click', hairFunctions.hairType4);
 
-const hairTypeVBtn = document.getElementById('hairV');
-hairTypeVBtn.addEventListener('click', hairFunctions.hairTypeV);
+const hairTypeVBtn = document.getElementById('hair5');
+hairTypeVBtn.addEventListener('click', hairFunctions.hairType5);
 
-const hairTypeVIBtn = document.getElementById('hairVI');
-hairTypeVIBtn.addEventListener('click', hairFunctions.hairTypeVI);
+const hairTypeVIBtn = document.getElementById('hair6');
+hairTypeVIBtn.addEventListener('click', hairFunctions.hairType6);
 
-const hairTypeVIIBtn = document.getElementById('hairVII');
-hairTypeVIIBtn.addEventListener('click', hairFunctions.hairTypeVII);
+const hairTypeVIIBtn = document.getElementById('hair7');
+hairTypeVIIBtn.addEventListener('click', hairFunctions.hairType7);
 
-const hairTypeVIIIBtn = document.getElementById('hairVIII');
-hairTypeVIIIBtn.addEventListener('click', hairFunctions.hairTypeVIII);
+const hairTypeVIIIBtn = document.getElementById('hair8');
+hairTypeVIIIBtn.addEventListener('click', hairFunctions.hairType8);
 
-const hairTypeIXBtn = document.getElementById('hairIX');
-hairTypeIXBtn.addEventListener('click', hairFunctions.hairTypeIX);
+const hairTypeIXBtn = document.getElementById('hair9');
+hairTypeIXBtn.addEventListener('click', hairFunctions.hairType9);
 
-const hairTypeXBtn = document.getElementById('hairX');
-hairTypeXBtn.addEventListener('click', hairFunctions.hairTypeX);
+const hairTypeXBtn = document.getElementById('hair10');
+hairTypeXBtn.addEventListener('click', hairFunctions.hairType10);
 
-const hairTypeXIBtn = document.getElementById('hairXI');
-hairTypeXIBtn.addEventListener('click', hairFunctions.hairTypeXI);
+const hairTypeXIBtn = document.getElementById('hair11');
+hairTypeXIBtn.addEventListener('click', hairFunctions.hairType11);
 
-const hairTypeXIIBtn = document.getElementById('hairXII');
-hairTypeXIIBtn.addEventListener('click', hairFunctions.hairTypeXII);
+const hairTypeXIIBtn = document.getElementById('hair12');
+hairTypeXIIBtn.addEventListener('click', hairFunctions.hairType12);
 
-const hairTypeXIIIBtn = document.getElementById('hairXIII');
-hairTypeXIIIBtn.addEventListener('click', hairFunctions.hairTypeXIII);
+const hairTypeXIIIBtn = document.getElementById('hair13');
+hairTypeXIIIBtn.addEventListener('click', hairFunctions.hairType13);
 
-const hairTypeXIVBtn = document.getElementById('hairXIV');
-hairTypeXIVBtn.addEventListener('click', hairFunctions.hairTypeXIV);
+const hairTypeXIVBtn = document.getElementById('hair14');
+hairTypeXIVBtn.addEventListener('click', hairFunctions.hairType14);
 
-const hairTypeXVBtn = document.getElementById('hairXV');
-hairTypeXVBtn.addEventListener('click', hairFunctions.hairTypeXV);
+const hairTypeXVBtn = document.getElementById('hair15');
+hairTypeXVBtn.addEventListener('click', hairFunctions.hairType15);
 
-const hairTypeXVIBtn = document.getElementById('hairXVI');
-hairTypeXVIBtn.addEventListener('click', hairFunctions.hairTypeXVI);
+const hairTypeXVIBtn = document.getElementById('hair16');
+hairTypeXVIBtn.addEventListener('click', hairFunctions.hairType16);
 
-const hairTypeXVIIBtn = document.getElementById('hairXVII');
-hairTypeXVIIBtn.addEventListener('click', hairFunctions.hairTypeXVII);
+const hairTypeXVIIBtn = document.getElementById('hair17');
+hairTypeXVIIBtn.addEventListener('click', hairFunctions.hairType17);
 
-const hairTypeXVIIIBtn = document.getElementById('hairXVIII');
-hairTypeXVIIIBtn.addEventListener('click', hairFunctions.hairTypeXVIII);
+const hairTypeXVIIIBtn = document.getElementById('hair18');
+hairTypeXVIIIBtn.addEventListener('click', hairFunctions.hairType18);
 
-const hairTypeXIXBtn = document.getElementById('hairXIX');
-hairTypeXIXBtn.addEventListener('click', hairFunctions.hairTypeXIX);
+const hairTypeXIXBtn = document.getElementById('hair19');
+hairTypeXIXBtn.addEventListener('click', hairFunctions.hairType19);
 
 // Hair Color Section
 const hairButton = document.getElementById('hair-color');
