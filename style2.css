@@ -37,7 +37,17 @@ width: 75%;
 
 .newForm{
   border: solid 2px black;
+  font-family: 'Ubuntu', sans-serif;
 }
+
+.btnStyling
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
 
 select {
   width: 100%;
