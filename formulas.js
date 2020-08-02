@@ -16,13 +16,11 @@ function colorFunc() {
 	document.documentElement.style.setProperty(`--${this.name}`, this.value);
 }
 
-///Experimental Section:
-//When an user clicks on a button, that button becomes disabled
-// let pageBtns = document.querySelectorAll('button');
-// function buttonToggler() {
-// 	for (let i = 0; i < pageBtns.length; i++) {
-// 		pageBtns[i].disabled = false;
-// 	}
-// 	this.disabled = true;
-// }
-// pageBtns.forEach((x) => x.addEventListener('click', buttonToggler));
+//Universal Pattern picker
+function patternPickerFunc() {
+	let funcName = this.value;
+	let func = window[funcName];
+	if (typeof func === 'function') {
+		func();
+	}
+}

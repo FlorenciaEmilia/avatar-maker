@@ -21,9 +21,8 @@ let mouthFunctions = {
 	}
 };
 
-let mouthTypeIBtn = document.getElementById('mouthI');
+let mouthTypeIBtn = document.getElementById('mouth1');
 mouthTypeIBtn.addEventListener('click', mouthFunctions.mouthTypeI);
 
-let mouthTypeIIBtn = document.getElementById('mouthII');
+let mouthTypeIIBtn = document.getElementById('mouth2');
 mouthTypeIIBtn.addEventListener('click', mouthFunctions.mouthTypeII);
-

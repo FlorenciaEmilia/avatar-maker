@@ -48,11 +48,11 @@ let eyeFunctions = {
 	}
 };
 
-let eyeTypeIBtn = document.getElementById('eyeI');
+let eyeTypeIBtn = document.getElementById('eye1');
 eyeTypeIBtn.addEventListener('click', eyeFunctions.eyeTypeI);
 
-let eyeTypeIIBtn = document.getElementById('eyeII');
+let eyeTypeIIBtn = document.getElementById('eye2');
 eyeTypeIIBtn.addEventListener('click', eyeFunctions.eyeTypeII);
 
-let eyeTypeIIIBtn = document.getElementById('eyeIII');
+let eyeTypeIIIBtn = document.getElementById('eye3');
 eyeTypeIIIBtn.addEventListener('click', eyeFunctions.eyeTypeIII);
