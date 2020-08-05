@@ -1,6 +1,7 @@
 :root {
 	--shirtColor: #db7093;
 	--hairColor: #d2691e;
+	--backgroundColor: #b3c6e3;
 }
 
 /* button {
@@ -36,7 +37,7 @@ img {
 	background-color: #ccb28d;
 }
 .bg {
-	background-color: #b3c6e3;
+	background-color: var(--backgroundColor);
 }
 
 .hair {
