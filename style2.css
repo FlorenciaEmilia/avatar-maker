@@ -1,18 +1,29 @@
-/* responsive design test */
-.wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 100px;
+*{
+  box-sizing: border-box;
 }
 
+/* responsive design test */
+#container{
+  padding: 20px;
+  float: left;
+  width: 50%;
+}
 /* new form section styling */
 
 .newForm{
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
+  padding: 20px;
+  float: left;
+  width: 50%;
 
+}
+
+@media screen and (max-width:800px){
+  #container, .newForm {
+    width: 100%;
+  }
 }
 
 .btnStyling
