@@ -1,6 +1,3 @@
 let skinForm=document.getElementById('skinForm');
-skinForm.addEventListener('change', skinColorPicker)
+skinForm.addEventListener('change',colorFunc)
 
-function skinColorPicker(){
-    console.log(this.value)
-}

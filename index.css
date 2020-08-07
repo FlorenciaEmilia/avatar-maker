@@ -2,6 +2,7 @@
 	--shirtColor: #db7093;
 	--hairColor: #d2691e;
 	--backgroundColor: #b3c6e3;
+	--skinColor: #ccb28d;
 }
 
 /* button {
@@ -34,7 +35,7 @@ img {
 }
 
 .skin {
-	background-color: #ccb28d;
+	background-color: var(--skinColor);
 }
 .bg {
 	background-color: var(--backgroundColor);
