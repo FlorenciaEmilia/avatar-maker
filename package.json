@@ -1,0 +1,24 @@
+{
+  "name": "avatar-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "avatarbackground.js",
+  "dependencies": {
+    "htmlshot": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorenciaEmilia/avatar-maker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorenciaEmilia/avatar-maker/issues"
+  },
+  "homepage": "https://github.com/FlorenciaEmilia/avatar-maker#readme"
+}
