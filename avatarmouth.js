@@ -1,28 +1,21 @@
 let mouthAreaSelector = document.querySelectorAll("[id^='mouth-']");
 
-let mouthFunctions = {
-	mouthTypeI: () => {
-		classRemoverFunc(mouthAreaSelector);
-		mouthAreaSelector[0].className += 'border';
-		mouthAreaSelector[1].className += 'border';
-		mouthAreaSelector[2].className += 'border';
-		mouthAreaSelector[3].className += 'border';
-		mouthAreaSelector[4].className += 'border';
-		mouthAreaSelector[5].className += 'border';
-	},
-	mouthTypeII: () => {
-		classRemoverFunc(mouthAreaSelector);
-		mouthAreaSelector[0].className += 'skin';
-		mouthAreaSelector[1].className += 'skin';
-		mouthAreaSelector[2].className += 'border';
-		mouthAreaSelector[3].className += 'border';
-		mouthAreaSelector[4].className += 'border';
-		mouthAreaSelector[5].className += 'border';
+function mouth1() {
+	classRemoverFunc(mouthAreaSelector);
+	for (let i = 0; i < 6; i++) {
+		areaFiller(mouthAreaSelector, i, 'border');
 	}
-};
+}
 
-let mouthTypeIBtn = document.getElementById('mouth1');
-mouthTypeIBtn.addEventListener('click', mouthFunctions.mouthTypeI);
+function mouth2() {
+	classRemoverFunc(mouthAreaSelector);
+	for (let i = 0; i < 2; i++) {
+		areaFiller(mouthAreaSelector, i, 'skin');
+	}
+	for (let i = 2; i < 6; i++) {
+		areaFiller(mouthAreaSelector, i, 'border');
+	}
+}
 
-let mouthTypeIIBtn = document.getElementById('mouth2');
-mouthTypeIIBtn.addEventListener('click', mouthFunctions.mouthTypeII);
+const mouthOption = document.getElementById('formMouth');
+mouthOption.addEventListener('change', patternPickerFunc);
