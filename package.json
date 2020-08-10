@@ -4,6 +4,7 @@
   "description": "",
   "main": "avatarbackground.js",
   "dependencies": {
+    "html2canvas": "^1.0.0-rc.6",
     "htmlshot": "^1.0.1"
   },
   "devDependencies": {},
