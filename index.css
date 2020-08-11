@@ -1,8 +1,8 @@
 :root {
-	--shirtColor: #db7093;
-	--hairColor: #d2691e;
-	--backgroundColor: #b3c6e3;
-	--skinColor: #ccb28d;
+  --shirtColor: #db7093;
+  --hairColor: #d2691e;
+  --backgroundColor: #b3c6e3;
+  --skinColor: #ccb28d;
 }
 
 /* button {
@@ -11,61 +11,62 @@
 } */
 
 img {
-	max-width: 100%;
-	max-height: 100%;
-	display: block;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 #container {
-	display: flex;
-	justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .row {
-	display: flex;
+  display: flex;
 }
 
 .p {
-	height: 14px;
-	width: 14px;
+  height: 14px;
+  width: 14px;
+  margin: 0;
 }
 .eyeball {
-	background-color: white;
+  background-color: white;
 }
 .border {
-	background-color: black;
+  background-color: black;
 }
 
 .skin {
-	background-color: var(--skinColor);
+  background-color: var(--skinColor);
 }
 .bg {
-	background-color: var(--backgroundColor);
+  background-color: var(--backgroundColor);
 }
 
 .hair {
-	background-color: var(--hairColor);
+  background-color: var(--hairColor);
 }
 
 .shirt {
-	background-color: var(--shirtColor);
+  background-color: var(--shirtColor);
 }
 
-div[id$='-area-test'] {
-	width: 50vw;
-	border: 2px solid palevioletred;
-	text-align: center;
-	padding: 1em;
+div[id$="-area-test"] {
+  width: 50vw;
+  border: 2px solid palevioletred;
+  text-align: center;
+  padding: 1em;
 }
 /*Test display*/
 #hair-area-test {
-	display: flex;
+  display: flex;
 }
 
 #hair-area-test div {
-	padding: 1em;
-	border-right: 1px solid green;
+  padding: 1em;
+  border-right: 1px solid green;
 }
 
 .explanation {
-	color: gray;
-	opacity: .5;
+  color: gray;
+  opacity: 0.5;
 }
