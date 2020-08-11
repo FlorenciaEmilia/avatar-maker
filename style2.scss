@@ -6,8 +6,7 @@
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* responsive design test */
@@ -16,8 +15,8 @@
   float: left;
   width: 50%;
 }
-
 /* new form section styling */
+
 .newForm {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
@@ -26,52 +25,34 @@
   float: left;
   width: 50%;
 }
-
 ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border: 2px solid pink;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: row;
+  align-items: stretch;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
 li {
   list-style-type: none;
   text-align: center;
   min-height: 40px;
   min-width: 120px;
   max-width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease-in-out;
 }
 
 li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #skin-color li {
-  color: gray;
+  color: lighten($color: #000000, $amount: 50);
 }
 
 @media screen and (max-width: 800px) {
@@ -82,19 +63,11 @@ li:hover {
 }
 
 .btnStyling {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: flex start;
-      -ms-flex-pack: flex start;
-          justify-content: flex start;
+  flex-direction: row;
+  justify-content: flex start;
   padding: 20px;
 }
-
 label {
   margin: 0 10px;
 }
@@ -102,7 +75,6 @@ label {
 input {
   margin: 0 20px;
 }
-
 label {
   margin: 0 10px;
 }
@@ -112,8 +84,6 @@ input {
 }
 
 select {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 300px;
   padding: 25px 20px;
@@ -132,18 +102,14 @@ select {
 .formHairColor,
 .formOutfitColor,
 .backgroundColor {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 /* end of new form section styling
   
   /* title about avatar */
+
 .title {
   text-align: center;
   font-family: "Press Start 2P", cursive;
@@ -154,4 +120,3 @@ select {
   
   font-family: 'Press Start 2P', cursive;
   font-family: 'Ubuntu', sans-serif; */
-/*# sourceMappingURL=style2.css.map */
