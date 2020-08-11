@@ -29,3 +29,11 @@ function patternPickerFunc() {
     func();
   }
 }
+
+//Universal Pattern Picker Beta
+function patternPickerFuncBeta(value) {
+  let func = window[value];
+  if (typeof func === "function") {
+    func();
+  }
+}

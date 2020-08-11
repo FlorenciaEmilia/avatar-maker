@@ -14,13 +14,24 @@ downLoadButton.addEventListener("click", () => {
   });
 });
 
-//Triggering toggle
+//Triggering toggle skin
 let skinColorSelector = document.getElementById("skinColorSelector");
 let skinColorUl = document.getElementById("skinColor");
 skinColorSelector.addEventListener(
   "click",
   () => {
     toggleFunction(skinColorUl);
+  },
+  false
+);
+
+//Triggering toggle nose
+let noseSelector = document.getElementById("noseSelector");
+let noseUl = document.getElementById("nose");
+noseSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(noseUl);
   },
   false
 );

@@ -24,7 +24,7 @@
   width: 50%;
 }
 ul {
-  display: inline-flex;
+  display: none;
   flex-wrap: wrap;
   border: 2px solid pink;
   flex-direction: row;
@@ -48,19 +48,20 @@ li:hover {
   cursor: pointer;
 }
 
-#skinColorContainer {
-  padding: 1.5em;
+#skinColorContainer,
+#noseContainer {
+  padding: 1.7em;
 }
 
-#skinColorSelector {
+span {
   border: 2px solid pink;
   background-color: #f1f1f1;
   padding: 1.2em;
   border-radius: 5px;
 }
-#skinColor {
-  display: none;
-}
+// #skinColor {
+//   display: none;
+// }
 #skinColor li {
   color: lighten($color: #000000, $amount: 50);
 }
