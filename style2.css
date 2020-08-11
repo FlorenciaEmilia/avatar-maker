@@ -65,7 +65,8 @@ li:hover {
 }
 
 #skinColorContainer,
-#noseContainer {
+#noseContainer,
+#eyeColorContainer {
   padding: 1.7em;
 }
 
@@ -76,8 +77,12 @@ span {
   border-radius: 5px;
 }
 
-#skinColor li {
+.colors li {
   color: gray;
+}
+
+#nose img {
+  width: 30%;
 }
 
 @media screen and (max-width: 800px) {

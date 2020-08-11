@@ -3,6 +3,7 @@
   --hairColor: #d2691e;
   --backgroundColor: #b3c6e3;
   --skinColor: #ccb28d;
+  --eyeColor: #111111;
 }
 
 /* button {
@@ -27,6 +28,10 @@ img {
   height: 14px;
   width: 14px;
   margin: 0;
+}
+
+.eyeColor {
+  background-color: var(--eyeColor);
 }
 .eyeball {
   background-color: white;

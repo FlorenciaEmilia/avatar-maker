@@ -1,4 +1,7 @@
-const classesToRemove = new RegExp(/skin|bg|border|hair|shirt|eyeball/, "gi");
+const classesToRemove = new RegExp(
+  /skin|bg|border|hair|shirt|eyeball|eyeColor/,
+  "gi"
+);
 let classEraser = (element) => {
   if (element.className.match(classesToRemove)) {
     element.className = element.className.replace(classesToRemove, "");

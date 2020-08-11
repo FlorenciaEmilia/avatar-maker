@@ -36,6 +36,17 @@ noseSelector.addEventListener(
   false
 );
 
+//Triggering toggle eye color
+let eyeSelector = document.getElementById("eyeColorSelector");
+let eyeUl = document.getElementById("eyeColor");
+eyeSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(eyeUl);
+  },
+  false
+);
+
 function toggleFunction(selector) {
   if (selector.style.display === "none") {
     selector.style.display = "inline-flex";
