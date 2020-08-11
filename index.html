@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="index.css" />
     <!-- layout/page degin stylesheet -->
     <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://kit.fontawesome.com/d0d624b013.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h1 class="title">Make your own Avatar</h1>
@@ -1313,7 +1317,7 @@
             </div>
           </div>
 
-          <select name="skinColor" id="skinForm">
+          <!-- <select name="skinColor" id="skinForm">
             <option>Choose your skin color</option>
             <option value="#E98978">#E98978</option>
             <option value="#F2B4A9">#F2B4A9</option>
@@ -1330,11 +1334,13 @@
             <option value="#843722">#843722</option>
             <option value="#3D0C02">#3D0C02</option>
             <option value="#260701">#260701</option>
-          </select>
+          </select> -->
 
-          <div>
-            <span >Choose your skin color</span>
-            <ul id="skin-color">
+          <div id="skinColorContainer">
+            <span id="skinColorSelector"
+              >Choose your skin color <i class="fas fa-arrow-down"></i>
+            </span>
+            <ul id="skinColor">
               <li data-color="#E98978">#E98978</li>
               <li data-color="#F2B4A9">#F2B4A9</li>
               <li data-color="#FFDDD9">#FFDDD9</li>
@@ -1347,6 +1353,7 @@
               <li data-color="#C37C4D">#C37C4D</li>
               <li data-color="#8E4B32">#8E4B32</li>
               <li data-color="#843722">#843722</li>
+              <li data-color="#6B4D57">#6B4D57</li>
               <li data-color="#3D0C02">#3D0C02</li>
               <li data-color="#260701">#260701</li>
             </ul>

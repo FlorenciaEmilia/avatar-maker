@@ -14,12 +14,23 @@ downLoadButton.addEventListener("click", () => {
   });
 });
 
-// Styling skin color options
-let skinColorOptions = document.querySelectorAll("#skin-color li");
-console.log(skinColorOptions);
-for (let i = 0; i < skinColorOptions.length; i++) {
-  console.log(skinColorOptions[i].getAttribute("data-color"));
-  skinColorOptions[i].style.backgroundColor = `${skinColorOptions[
-    i
-  ].getAttribute("data-color")}`;
+//Triggering toggle
+let skinColorSelector = document.getElementById("skinColorSelector");
+let skinColorUl = document.getElementById("skinColor");
+skinColorSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(skinColorUl);
+  },
+  false
+);
+
+function toggleFunction(selector) {
+  if (selector.style.display === "none") {
+    selector.style.display = "inline-flex";
+  } else {
+    selector.style.display = "none";
+  }
+  // selector.style.display =
+  //   selector.style.display === "none" ? "inline-flex" : selector.style.display === "inline-flex"?"none";
 }
