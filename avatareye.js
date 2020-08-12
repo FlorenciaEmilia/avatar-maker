@@ -47,8 +47,16 @@ function eye3() {
   areaFiller(eyeAreaSelector, 11, "eyeball");
 }
 
-const eyeOption = document.getElementById("formEye");
-eyeOption.addEventListener("change", patternPickerFunc);
+// const eyeOption = document.getElementById("formEye");
+// eyeOption.addEventListener("change", patternPickerFunc);
+
+//Eye
+let eyeOptions = document.querySelectorAll("#eye li");
+for (let i = 0; i < eyeOptions.length; i++) {
+  eyeOptions[i].addEventListener("click", () => {
+    patternPickerFuncBeta(eyeOptions[i].getAttribute("data-eye"));
+  });
+}
 
 //Eye color
 let eyeColorOptions = document.querySelectorAll("#eyeColor li");

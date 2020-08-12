@@ -37,8 +37,19 @@ noseSelector.addEventListener(
 );
 
 //Triggering toggle eye color
-let eyeSelector = document.getElementById("eyeColorSelector");
-let eyeUl = document.getElementById("eyeColor");
+let eyeColorSelector = document.getElementById("eyeColorSelector");
+let eyeColorUl = document.getElementById("eyeColor");
+eyeColorSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(eyeColorUl);
+  },
+  false
+);
+
+//Triggering toggle eye
+let eyeSelector = document.getElementById("eyeSelector");
+let eyeUl = document.getElementById("eye");
 eyeSelector.addEventListener(
   "click",
   () => {
