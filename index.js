@@ -47,6 +47,16 @@ eyeColorSelector.addEventListener(
   false
 );
 
+//Triggering toggle mouth
+let mouthSelector = document.getElementById("mouthSelector");
+let mouthUl = document.getElementById("mouth");
+mouthSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(mouthUl);
+  },
+  false
+);
 //Triggering toggle eye
 let eyeSelector = document.getElementById("eyeSelector");
 let eyeUl = document.getElementById("eye");

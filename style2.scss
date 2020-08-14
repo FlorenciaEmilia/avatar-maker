@@ -51,8 +51,10 @@ li:hover {
 #skinColorContainer,
 #noseContainer,
 #eyeColorContainer,
-#eyeContainer {
+#eyeContainer,
+#mouthContainer {
   padding: 1.7em;
+  flex-direction: column;
 }
 
 span {
