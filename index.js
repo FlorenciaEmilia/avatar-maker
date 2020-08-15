@@ -68,6 +68,17 @@ eyeSelector.addEventListener(
   false
 );
 
+//Triggering toggle hair
+let hairSelector = document.getElementById("hairSelector");
+let hairUl = document.getElementById("hair");
+hairSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(hairUl);
+  },
+  false
+);
+
 function toggleFunction(selector) {
   if (selector.style.display === "none") {
     selector.style.display = "inline-flex";

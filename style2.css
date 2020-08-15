@@ -68,7 +68,8 @@ li:hover {
 #noseContainer,
 #eyeColorContainer,
 #eyeContainer,
-#mouthContainer {
+#mouthContainer,
+#hairContainer {
   padding: 1.7em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -87,8 +88,8 @@ span {
   color: gray;
 }
 
-#nose img {
-  width: 30%;
+li img {
+  width: 100px;
 }
 
 @media screen and (max-width: 800px) {

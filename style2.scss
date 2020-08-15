@@ -52,7 +52,8 @@ li:hover {
 #noseContainer,
 #eyeColorContainer,
 #eyeContainer,
-#mouthContainer {
+#mouthContainer,
+#hairContainer {
   padding: 1.7em;
   flex-direction: column;
 }
@@ -70,8 +71,8 @@ span {
   color: lighten($color: #000000, $amount: 50);
 }
 
-#nose img {
-  width: 30%;
+li img {
+  width: 100px;
 }
 
 @media screen and (max-width: 800px) {
