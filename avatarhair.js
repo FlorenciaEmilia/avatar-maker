@@ -2951,3 +2951,10 @@ for (let i = 0; i < hairOptions.length; i++) {
     patternPickerFuncBeta(hairOptions[i].getAttribute("data-hair"));
   });
 }
+
+let bangsOptions = document.querySelectorAll("#bangs li");
+for (let i = 0; i < bangsOptions.length; i++) {
+  bangsOptions[i].addEventListener("click", () => {
+    patternPickerFuncBeta(bangsOptions[i].getAttribute("data-bangs"));
+  });
+}

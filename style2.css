@@ -69,7 +69,8 @@ li:hover {
 #eyeColorContainer,
 #eyeContainer,
 #mouthContainer,
-#hairContainer {
+#hairContainer,
+#bangsContainer {
   padding: 1.7em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

@@ -79,6 +79,17 @@ hairSelector.addEventListener(
   false
 );
 
+//Triggering bang section
+let bangSelector = document.getElementById("bangsSelector");
+let bangsUl = document.getElementById("bangs");
+bangsSelector.addEventListener(
+  "click",
+  () => {
+    toggleFunction(bangsUl);
+  },
+  false
+);
+
 function toggleFunction(selector) {
   if (selector.style.display === "none") {
     selector.style.display = "inline-flex";
