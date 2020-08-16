@@ -82,7 +82,7 @@ hairSelector.addEventListener(
 //Triggering bang section
 let bangSelector = document.getElementById("bangsSelector");
 let bangsUl = document.getElementById("bangs");
-bangsSelector.addEventListener(
+bangSelector.addEventListener(
   "click",
   () => {
     toggleFunction(bangsUl);
