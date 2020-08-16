@@ -6,6 +6,7 @@ let bangAreaSelector = document.querySelectorAll("[id^='bang-']");
 let bangType;
 let hairStyle;
 let bang = true;
+let bangContainer = document.getElementById("bangsContainer");
 
 let areaFiller = (fillArea, idNumber, cssClassName) => {
   fillArea[idNumber].className += cssClassName;
@@ -1128,9 +1129,11 @@ const hairFunctionsBasePattern = {
 };
 
 function bowl() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "bowl";
+
   classRemoverFunc(hairAreaSelector);
 
   for (let i = 0; i < 176; i++) {
@@ -1240,9 +1243,11 @@ function bowl() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function shortCurlyHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairFunctionsBasePattern.hairTypeV();
@@ -1254,9 +1259,11 @@ function shortCurlyHair() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function mediumCurlyHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairFunctionsBasePattern.hairTypeVI();
@@ -1280,9 +1287,11 @@ function mediumCurlyHair() {
   }
 
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function longCurlyHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "long-curtly-hair";
@@ -1381,9 +1390,11 @@ function longCurlyHair() {
   for (let i = 631; i < 634; i++) {
     areaFiller(hairAreaSelector, i, "bg");
   }
+  bangsExceptionChecker();
 }
 
 function shortCurlyHair2() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairFunctionsBasePattern.hairTypeVIII();
@@ -1406,9 +1417,11 @@ function shortCurlyHair2() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function mediumCurlyHair2() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "medium-curtly-hair2";
@@ -1417,9 +1430,11 @@ function mediumCurlyHair2() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function longCurlyHair2() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "long-curtly-hair2";
@@ -1498,9 +1513,11 @@ function longCurlyHair2() {
   for (let i = 630; i < 634; i++) {
     areaFiller(hairAreaSelector, i, "bg");
   }
+  bangsExceptionChecker();
 }
 
 function shortPuffyHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "short-puffy-hair";
@@ -1546,9 +1563,11 @@ function shortPuffyHair() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function mediumPuffyHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "medium-puffy-hair";
@@ -1592,9 +1611,11 @@ function mediumPuffyHair() {
   }
 
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function longPuffyHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "long-puffy-hair";
@@ -1707,9 +1728,11 @@ function longPuffyHair() {
   for (let i = 630; i < 634; i++) {
     areaFiller(hairAreaSelector, i, "bg");
   }
+  bangsExceptionChecker();
 }
 
 function shortCurlyHair3() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "short-curly-hair3";
@@ -1734,9 +1757,11 @@ function shortCurlyHair3() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function mediumCurlyHair3() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "medium-curly-hair3";
@@ -1763,9 +1788,11 @@ function mediumCurlyHair3() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function longCurlyHair3() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "long-curly-hair3";
@@ -1858,9 +1885,11 @@ function longCurlyHair3() {
   for (let i = 630; i < 634; i++) {
     areaFiller(hairAreaSelector, i, "bg");
   }
+  bangsExceptionChecker();
 }
 
 function sixtiesShortHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "sixties-short-hair";
@@ -1981,9 +2010,11 @@ function sixtiesShortHair() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function sixtiesMediumHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairFunctionsBasePattern.hairTypeXVIII();
@@ -2078,11 +2109,14 @@ function sixtiesMediumHair() {
     areaFiller(hairAreaSelector, i, "bg");
   }
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function sixtiesLongHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
+
   hairFunctionsBasePattern.hairTypeXVIII();
   for (let i = 399; i < 405; i++) {
     areaFiller(hairAreaSelector, i, "bg");
@@ -2237,9 +2271,11 @@ function sixtiesLongHair() {
   for (let i = 631; i < 634; i++) {
     areaFiller(hairAreaSelector, i, "bg");
   }
+  bangsExceptionChecker();
 }
 
 function buns() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "buns";
@@ -2424,9 +2460,11 @@ function buns() {
 
   // Here the shirt starts
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function mediumDefaultHair() {
+  leftSideBangsFunc();
   bangs = true;
   bangAvailabilityCheck();
   hairStyle = "bob";
@@ -2688,11 +2726,13 @@ function mediumDefaultHair() {
   }
   //Here is where shirt approximately starts
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
 function baldWithBangs() {
   bangs = true;
   bangAvailabilityCheck();
+  leftSideBangsFunc();
   hairStyle = "baldWithBangs";
   classRemoverFunc(hairAreaSelector);
   for (let i = 0; i < 234; i++) {
@@ -2742,19 +2782,20 @@ function baldWithBangs() {
   }
 
   hairFunctionsBasePattern.avatarBottom();
+  bangsExceptionChecker();
 }
 
-function bangAvailabilityCheck() {
-  // let bangContainer = document.getElementById("bangsContainer");
-  if (bangs) {
-    bangSelector.style.display = "inline-block";
-  }
-}
 function baldWithNoBangs() {
   bangs = false;
   baldWithBangs();
   noBangsFunc();
-  bangSelector.style.display = "none";
+  bangContainer.style.display = "none";
+}
+
+function bangAvailabilityCheck() {
+  if (bangs) {
+    bangContainer.style.display = "inline-block";
+  }
 }
 
 //Bang test area
@@ -2803,12 +2844,25 @@ function noBangsFunc() {
 }
 
 function bangsExceptionChecker() {
-  if (hairStyle == "baldWithBangs") {
-    classRemoverFunc(surrounderSelector);
-    for (let i = 0; i < surrounderSelector.length; i++) {
-      areaFiller(surrounderSelector, i, "border");
-    }
-  }
+  // if (hairStyle == "buns") {
+  //   let longBangsSides = surrounderSelector.slice(12, 16);
+  //   classRemoverFunc(longBangsSides);
+  //   for (let i = 0; i < longBangsSides.length; i++) {
+  //     areaFiller(longBangsSides, i, "border");
+  //   }
+  //   let bunMiddle = surrounderSelector.slice(8, 12);
+  //   classRemoverFunc(bunMiddle);
+  //   for (let i = 0; i < bunMiddle.length; i++) {
+  //     areaFiller(bunMiddle, i, "border");
+  //   }
+  // } else {
+  //   classRemoverFunc(surrounderSelector);
+  //   for (let i = 0; i < surrounderSelector.length; i++) {
+  //     areaFiller(surrounderSelector, i, "border");
+  //   }
+  //   if (hairStyle == "baldWithBangs") {
+  //   }
+  // }
 }
 
 function baldWithBangsException() {}
@@ -2823,18 +2877,18 @@ function longBangsFunc() {
   //Exceptions
   //repeated code, check out later
   bangsExceptionChecker();
-  if (hairStyle == "buns") {
-    let longBangsSides = surrounderSelector.slice(12, 16);
-    classRemoverFunc(longBangsSides);
-    for (let i = 0; i < longBangsSides.length; i++) {
-      areaFiller(longBangsSides, i, "border");
-    }
-    let bunMiddle = surrounderSelector.slice(8, 12);
-    classRemoverFunc(bunMiddle);
-    for (let i = 0; i < bunMiddle.length; i++) {
-      areaFiller(bunMiddle, i, "border");
-    }
-  }
+  // if (hairStyle == "buns") {
+  //   let longBangsSides = surrounderSelector.slice(12, 16);
+  //   classRemoverFunc(longBangsSides);
+  //   for (let i = 0; i < longBangsSides.length; i++) {
+  //     areaFiller(longBangsSides, i, "border");
+  //   }
+  //   let bunMiddle = surrounderSelector.slice(8, 12);
+  //   classRemoverFunc(bunMiddle);
+  //   for (let i = 0; i < bunMiddle.length; i++) {
+  //     areaFiller(bunMiddle, i, "border");
+  //   }
+  // }
 
   //Make this into a function in the future
   let exception = surrounderSelector.slice(-4);
