@@ -16,6 +16,17 @@ img {
   max-height: 100%;
   display: block;
 }
+
+#hair-color {
+  background-color: var(--hairColor);
+}
+#shirt-color {
+  background-color: var(--shirtColor);
+}
+
+#background-color {
+  background-color: var(--backgroundColor);
+}
 #container {
   display: flex;
   justify-content: space-evenly;

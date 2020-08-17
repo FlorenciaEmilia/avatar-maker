@@ -17,16 +17,16 @@
 
 .newForm {
   font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
   font-size: 15px;
   text-transform: uppercase;
   padding: 20px;
   float: left;
-  width: 50%;
+  width: 35%;
 }
 ul {
   display: none;
   flex-wrap: wrap;
-  border: 2px solid pink;
   flex-direction: row;
   align-items: stretch;
   padding: 0;
@@ -55,19 +55,121 @@ li:hover {
 #mouthContainer,
 #hairContainer,
 #bangsContainer {
-  padding: 1.7em;
-  flex-direction: column;
+  padding: 0.8em;
+  // flex-direction: column;
 }
 
-span {
-  border: 2px solid pink;
-  background-color: #f1f1f1;
-  padding: 1.2em;
-  border-radius: 5px;
+input::-webkit-color-swatch {
+  border: none;
 }
-// #skinColor {
-//   display: none;
-// }
+
+input[type="color"] {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 3px solid black;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.inputs {
+  align-items: center;
+  text-align: center;
+}
+.selector-display {
+  display: flex;
+}
+
+.section_8bit {
+  width: 100%;
+  margin: 10px;
+  float: left;
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section_8bit .wrapper {
+  display: block;
+  color: black;
+  padding: 40px;
+  margin: -5px 0;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.section_8bit::before,
+.section_8bit::after,
+.section_8bit .wrapper::before,
+.section_8bit .wrapper::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  background: black;
+}
+.section_8bit::before {
+  top: -2px;
+  left: -2px;
+}
+.section_8bit::after {
+  top: -2px;
+  right: -2px;
+}
+.section_8bit .wrapper::before {
+  bottom: -2px;
+  left: -2px;
+}
+.section_8bit .wrapper::after {
+  bottom: -2px;
+  right: -2px;
+}
+span {
+  width: 100%;
+}
+
+.fa-arrow-down {
+  font-size: 20px;
+}
+
+#downloadBtn {
+  background-color: white;
+  animation: rainbow 2s ease-in-out infinite;
+  transition: color 0.2s ease-in-out;
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 1em;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 6px;
+  font-weight: bolder;
+}
+
+#downloadBtn:hover {
+  color: white;
+
+  cursor: pointer;
+  background: linear-gradient(to right, #cba2de, #d6dea2, #9ecfd9, #f2cbbf);
+  background-size: 200% 200%;
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
 .colors li {
   color: lighten($color: #000000, $amount: 50);
 }
@@ -84,20 +186,27 @@ li img {
 }
 
 .btnStyling {
+  font-weight: bolder;
   display: flex;
-  flex-direction: row;
-  justify-content: flex start;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 1em;
+
+  // flex-direction: row;
+  // justify-content: flex start;
+  // padding: 20px;
 }
-label {
-  margin: 0 10px;
-}
+
+// .btnStyling div {
+//   display: flex;
+//   align-self: center;
+// }
 
 input {
   margin: 0 20px;
 }
 label {
   margin: 0 10px;
+  padding-bottom: 0.3em;
 }
 
 input {
