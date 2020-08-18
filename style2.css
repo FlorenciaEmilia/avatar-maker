@@ -56,6 +56,7 @@ li {
           justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  font-weight: 300;
 }
 
 li:hover {
@@ -181,8 +182,8 @@ span {
 #downloadBtn:hover {
   color: white;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, right top, from(#cba2de), color-stop(#d6dea2), color-stop(#9ecfd9), to(#f2cbbf));
-  background: linear-gradient(to right, #cba2de, #d6dea2, #9ecfd9, #f2cbbf);
+  background: -webkit-gradient(linear, left top, right top, from(#fa7241), color-stop(#e4f241), color-stop(#42f551), color-stop(#3cb7fa), to(#4e3bf7));
+  background: linear-gradient(to right, #fa7241, #e4f241, #42f551, #3cb7fa, #4e3bf7);
   background-size: 200% 200%;
 }
 

@@ -41,6 +41,7 @@ li {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease-in-out;
+  font-weight: 300;
 }
 
 li:hover {
@@ -156,7 +157,15 @@ span {
   color: white;
 
   cursor: pointer;
-  background: linear-gradient(to right, #cba2de, #d6dea2, #9ecfd9, #f2cbbf);
+  // background: linear-gradient(to right, #cba2de, #d6dea2, #9ecfd9, #f2cbbf);
+  background: linear-gradient(
+    to right,
+    #fa7241,
+    #e4f241,
+    #42f551,
+    #3cb7fa,
+    #4e3bf7
+  );
   background-size: 200% 200%;
 }
 @keyframes rainbow {

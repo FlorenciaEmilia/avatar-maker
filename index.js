@@ -1,4 +1,5 @@
 let downLoadButton = document.getElementById("downloadBtn");
+
 downLoadButton.addEventListener("click", () => {
   html2canvas(document.querySelector("#avatar-container")).then(function (
     canvas
@@ -14,8 +15,23 @@ downLoadButton.addEventListener("click", () => {
   });
 });
 
+//Close divs if clicked outside of it
+let allSelectors = document.querySelectorAll(".section_8bit");
+let allUls = document.querySelectorAll(".selectionInfo");
+document.addEventListener("mouseup", function (e) {
+  for (let i = 0; i < allSelectors.length; i++) {
+    hidingFunction(e, allSelectors[i], allUls[i]);
+  }
+});
+
+function hidingFunction(evt, selector, ul) {
+  if (ul.contains(evt.target) || !selector.contains(evt.target)) {
+    ul.style.display = "none";
+  }
+}
+
 //Triggering toggle skin
-let skinColorSelector = document.getElementById("skinColorSelector");
+let skinColorSelector = document.getElementById("skinColorContainer");
 let skinColorUl = document.getElementById("skinColor");
 skinColorSelector.addEventListener(
   "click",
@@ -26,7 +42,7 @@ skinColorSelector.addEventListener(
 );
 
 //Triggering toggle nose
-let noseSelector = document.getElementById("noseSelector");
+let noseSelector = document.getElementById("noseContainer");
 let noseUl = document.getElementById("nose");
 noseSelector.addEventListener(
   "click",
@@ -37,7 +53,7 @@ noseSelector.addEventListener(
 );
 
 //Triggering toggle eye color
-let eyeColorSelector = document.getElementById("eyeColorSelector");
+let eyeColorSelector = document.getElementById("eyeColorContainer");
 let eyeColorUl = document.getElementById("eyeColor");
 eyeColorSelector.addEventListener(
   "click",
@@ -48,7 +64,7 @@ eyeColorSelector.addEventListener(
 );
 
 //Triggering toggle mouth
-let mouthSelector = document.getElementById("mouthSelector");
+let mouthSelector = document.getElementById("mouthContainer");
 let mouthUl = document.getElementById("mouth");
 mouthSelector.addEventListener(
   "click",
@@ -58,7 +74,7 @@ mouthSelector.addEventListener(
   false
 );
 //Triggering toggle eye
-let eyeSelector = document.getElementById("eyeSelector");
+let eyeSelector = document.getElementById("eyeContainer");
 let eyeUl = document.getElementById("eye");
 eyeSelector.addEventListener(
   "click",
@@ -69,7 +85,7 @@ eyeSelector.addEventListener(
 );
 
 //Triggering toggle hair
-let hairSelector = document.getElementById("hairSelector");
+let hairSelector = document.getElementById("hairContainer");
 let hairUl = document.getElementById("hair");
 hairSelector.addEventListener(
   "click",
@@ -80,7 +96,7 @@ hairSelector.addEventListener(
 );
 
 //Triggering bang section
-let bangSelector = document.getElementById("bangsSelector");
+let bangSelector = document.getElementById("bangsContainer");
 let bangsUl = document.getElementById("bangs");
 bangSelector.addEventListener(
   "click",
