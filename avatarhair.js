@@ -2792,9 +2792,12 @@ function baldWithNoBangs() {
   bangContainer.style.display = "none";
 }
 
+//Now div wont come again
+let bangSelectorDiv = document.getElementById("bangsSelector");
 function bangAvailabilityCheck() {
   if (bangs) {
     bangContainer.style.display = "inline-block";
+    bangContainer.style.width = "100%";
   }
 }
 

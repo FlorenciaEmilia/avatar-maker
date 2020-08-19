@@ -216,7 +216,7 @@ span {
 }
 
 li img {
-  width: 100px;
+  max-width: 90px;
 }
 
 @media screen and (max-width: 800px) {
