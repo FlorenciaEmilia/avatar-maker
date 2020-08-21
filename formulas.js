@@ -2,10 +2,15 @@ const classesToRemove = new RegExp(
   /skin|bg|border|hair|shirt|eyeball|eyeColor/,
   "gi"
 );
+
 let classEraser = (element) => {
   if (element.className.match(classesToRemove)) {
     element.className = element.className.replace(classesToRemove, "");
   }
+};
+
+let areaFiller = (fillArea, idNumber, cssClassName) => {
+  fillArea[idNumber].className += cssClassName;
 };
 
 let classRemoverFunc = (areaSelector) => {
