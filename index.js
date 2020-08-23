@@ -112,6 +112,4 @@ function toggleFunction(selector) {
   } else {
     selector.style.display = "none";
   }
-  // selector.style.display =
-  //   selector.style.display === "none" ? "inline-flex" : selector.style.display === "inline-flex"?"none";
 }

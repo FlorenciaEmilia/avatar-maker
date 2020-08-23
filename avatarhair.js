@@ -2942,6 +2942,18 @@ function leftSideBangsFunc() {
     }
   }
 
+  classRemoverFunc(surrounderSelector);
+  for (let i = 0; i < surrounderSelector.length - 4; i++) {
+    areaFiller(surrounderSelector, i, "hair");
+  }
+  for (
+    let i = surrounderSelector.length - 4;
+    i < surrounderSelector.length;
+    i++
+  ) {
+    areaFiller(surrounderSelector, i, "border");
+  }
+
   for (let i = 0; i < 6; i++) {
     areaFiller(bangAreaSelector, i, "hair");
   }
@@ -3002,6 +3014,17 @@ function rightSideBangsFunc() {
     for (let i = 0; i < exception.length; i++) {
       areaFiller(exception, i, "hair");
     }
+  }
+  classRemoverFunc(surrounderSelector);
+  for (let i = 0; i < surrounderSelector.length - 4; i++) {
+    areaFiller(surrounderSelector, i, "hair");
+  }
+  for (
+    let i = surrounderSelector.length - 4;
+    i < surrounderSelector.length;
+    i++
+  ) {
+    areaFiller(surrounderSelector, i, "border");
   }
 
   for (let i = 0; i < 2; i++) {
