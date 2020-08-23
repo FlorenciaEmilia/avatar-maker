@@ -47,9 +47,6 @@ function eye3() {
   areaFiller(eyeAreaSelector, 11, "eyeball");
 }
 
-// const eyeOption = document.getElementById("formEye");
-// eyeOption.addEventListener("change", patternPickerFunc);
-
 //Eye
 let eyeOptions = document.querySelectorAll("#eye li");
 for (let i = 0; i < eyeOptions.length; i++) {

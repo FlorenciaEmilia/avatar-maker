@@ -17,9 +17,6 @@ function mouth2() {
   }
 }
 
-// const mouthOption = document.getElementById('formMouth');
-// mouthOption.addEventListener('change', patternPickerFunc);
-
 let mouthOptions = document.querySelectorAll("#mouth li");
 for (let i = 0; i < mouthOptions.length; i++) {
   mouthOptions[i].addEventListener("click", () => {

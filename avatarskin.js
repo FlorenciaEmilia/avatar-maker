@@ -1,7 +1,3 @@
-// let skinForm = document.getElementById("skinForm");
-// skinForm.addEventListener("change", colorFunc);
-
-// Styling skin color options (Under test)
 let skinColorOptions = document.querySelectorAll("#skinColor li");
 
 for (let i = 0; i < skinColorOptions.length; i++) {
