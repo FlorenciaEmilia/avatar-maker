@@ -107,7 +107,7 @@ bangSelector.addEventListener(
 );
 
 function toggleFunction(selector) {
-  if (selector.style.display === "none") {
+  if (selector.style.display === "none" || selector.style.display === "") {
     selector.style.display = "inline-flex";
   } else {
     selector.style.display = "none";

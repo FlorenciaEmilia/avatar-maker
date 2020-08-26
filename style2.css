@@ -5,24 +5,31 @@
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* justify-content: space-evenly; */
-}
+
 /* responsive design test */
 #container {
   padding: 20px;
   float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 /* new form section styling */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .newForm {
   font-family: "Ubuntu", sans-serif;
   font-weight: bolder;
@@ -36,14 +43,14 @@
 ul {
   display: none;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding: 0;
 }
 
@@ -56,11 +63,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-weight: 300;
@@ -68,7 +75,7 @@ li {
 
 li:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -99,8 +106,8 @@ input[type="color"] {
 
 .inputs {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
@@ -173,13 +180,12 @@ span {
 #downloadBtn {
   background-color: white;
   -webkit-animation: rainbow 2s ease-in-out infinite;
-  animation: rainbow 2s ease-in-out infinite;
+          animation: rainbow 2s ease-in-out infinite;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
   border: 5px solid black;
   border-radius: 5px;
   padding: 1em;
-  width: 100%;
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
   margin-top: 6px;
@@ -189,24 +195,8 @@ span {
 #downloadBtn:hover {
   color: white;
   cursor: pointer;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#fa7241),
-    color-stop(#e4f241),
-    color-stop(#42f551),
-    color-stop(#3cb7fa),
-    to(#4e3bf7)
-  );
-  background: linear-gradient(
-    to right,
-    #fa7241,
-    #e4f241,
-    #42f551,
-    #3cb7fa,
-    #4e3bf7
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#fa7241), color-stop(#e4f241), color-stop(#42f551), color-stop(#3cb7fa), to(#4e3bf7));
+  background: linear-gradient(to right, #fa7241, #e4f241, #42f551, #3cb7fa, #4e3bf7);
   background-size: 200% 200%;
 }
 
@@ -255,8 +245,8 @@ li img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1em;
 }
 
@@ -299,8 +289,8 @@ select {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* end of new form section styling
